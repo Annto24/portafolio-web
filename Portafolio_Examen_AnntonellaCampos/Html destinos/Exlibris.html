@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Exlibris</title>
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-obra {
+            width: 85%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .linea {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 70px;
+            background-color: #fef194;
+            z-index: -1;
+        }
+
+        .linea1 {
+            left: 0;
+        }
+
+        .linea2 {
+            left: 220px;
+        }
+
+        .titulo {
+            background-color: #e6b6d7;
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: clamp(22px, 4vw, 32px);
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contenido {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .contenido p {
+            flex: 1 1 300px;
+            font-size: clamp(14px, 2.5vw, 16px);
+            line-height: 1.6;
+            color: #222;
+        }
+
+        .contenido img {
+            flex: 1 1 250px;
+            max-width: 100%;
+            width: 350px;
+            border-radius: 20px;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            background: #e6b6d7;
+            color: #333;
+            font-weight: bold;
+        }
+
+        @media (max-width: 900px) {
+            .linea {
+                display: none;
+            }
+            .section-obra {
+                width: 92%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .contenido {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contenido img {
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="section-obra">
+
+        <div class="linea linea1"></div>
+        <div class="linea linea2"></div>
+
+        <h2 class="titulo">Exlibris</h2>
+
+        <div class="contenido">
+            <p>
+                Un ejercicio donde el objetivo es mostrar de manera visual la esencia de la autora. El proceso comenzó 
+                recolectando diferentes cosas que la autora disfruta ver y escuchar, además de la creación de un moodboard 
+                que resume la personalidad de esta. Luego se paso a una fase de bocetaje, y por último, la realización digital 
+                del boceto final.
+            </p>
+
+            <img src="Imagenes/Exlibris.png" alt="Obra Exlibris">
+        </div>
+    </section>
+</body>
+</html>

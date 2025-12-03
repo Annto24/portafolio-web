@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Fanzine</title>
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-obra {
+            width: 85%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .linea {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 70px;
+            background-color: #fef194;
+            z-index: -1;
+        }
+
+        .linea1 {
+            left: 0;
+        }
+
+        .linea2 {
+            left: 220px;
+        }
+
+        .titulo {
+            background-color: #e6b6d7;
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: clamp(22px, 4vw, 32px);
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contenido {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .contenido p {
+            flex: 1 1 300px;
+            font-size: clamp(14px, 2.5vw, 16px);
+            line-height: 1.6;
+            color: #222;
+        }
+
+        .contenido img {
+            flex: 1 1 250px;
+            max-width: 100%;
+            width: 350px;
+            border-radius: 20px;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            background: #e6b6d7;
+            color: #333;
+            font-weight: bold;
+        }
+
+        @media (max-width: 900px) {
+            .linea {
+                display: none;
+            }
+            .section-obra {
+                width: 92%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .contenido {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contenido img {
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="section-obra">
+
+        <div class="linea linea1"></div>
+        <div class="linea linea2"></div>
+
+        <h2 class="titulo">Fanzine</h2>
+
+        <div class="contenido">
+            <p>
+                Un fanzine pensado para ayudar a estudiantes de primer año, dando les tips como por ejemplo como organizar 
+                su tiempo.
+                <br><br>
+                Definiendo el publico objetivo, se hizo una lluvia de ideas para saber cual podría ser una necesidad que 
+                experimentarían estos estudiantes. Con el tema escogido se busco inforación, y luego se empezo a diseñar el 
+                fanzine con un estilo greativo, colorido y amigable para facilitar el entendimiento de la información.
+            </p>
+
+            <img src="Imagenes/Fanzine.png" alt="Obra Fanzine">
+        </div>
+    </section>
+</body>
+</html>
